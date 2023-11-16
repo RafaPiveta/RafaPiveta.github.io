@@ -1,0 +1,190 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Cor do texto */
+    background-color: #f4f4f4; /* Cor de fundo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #0077cc; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    padding: 1.5rem 0; /* Aumenta o padding para dar mais destaque */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 50px; /* Tamanho original do título principal */
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #005fa3; /* Fundo ligeiramente mais escuro para os links se destacarem */
+    padding: 0.5rem 1rem; /* Padding para fazer os links parecerem botões */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #005fa3; /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo para a aba ativa */
+nav ul li a.active {
+    border: 4px solid #e00e0e; /* Borda amarela */
+    border-radius: 5px; /* Bordas arredondadas para estética */
+}
+
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para todas as seções */
+.welcome-section, .tecnologia-section, .transportes-section, .educacao-section, .ambientes-urbanos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem; /* Espaço interno da seção */
+    margin-bottom: 3rem; /* Espaço abaixo da seção */
+    background-color: #f9f9f9; /* Fundo cinza claro */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+.welcome-section h2, .tecnologia-section h2, .transportes-section h2, .educacao-section h2, .ambientes-urbanos-section h2 {
+    font-size: 40px; /* Tamanho dos títulos das seções */
+    color: #0077cc; /* Cor azul para títulos das seções */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row; /* Conteúdo lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%; /* Largura total da seção */
+    justify-content: space-between; /* Espaça elementos uniformemente */
+}
+
+.text-and-button {
+    margin-right: 150px; /* Espaço à direita do texto e do botão */
+    margin-left: 150px;
+    font-size:20px;
+}
+
+#welcome-heading {
+    margin-bottom: 80px; /* Espaço abaixo do cabeçalho */
+}
+
+.welcome-section .welcome-image, .tecnologia-section img, .transportes-section img, .educacao-section img, .ambientes-urbanos-section img {
+    max-width: 30%; /* Tamanho da imagem */
+    height: auto; /* Proporção automática */
+    border-radius: 15px; /* Bordas arredondadas para a imagem */
+    margin-bottom: 2rem; /* Espaço abaixo da imagem */
+    margin-right: 2rem; /* Espaço à direita da imagem */
+}
+
+.ouvir-button {
+    background-color: #0074d9; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas para o botão */
+    cursor: pointer; /* Cursor do tipo mão */
+    opacity: 0.8; /* Opacidade reduzida para o botão */
+    transition: opacity 0.3s; /* Transição suave da opacidade */
+    display: inline-flex; /* Exibição flexível */
+    align-items: center; /* Alinha itens verticalmente */
+    justify-content: space-between; /* Conteúdo espalhado uniformemente */
+    margin-top: 70px; /* Espaço acima do botão */
+    font-size: 20px; /* Tamanho da fonte do botão */
+}
+
+.ouvir-button:hover {
+    opacity: 1; /* Opacidade total ao passar o mouse */
+}
+
+.ouvir-button img {
+    width: 40px; /* Largura do ícone do botão */
+    height: auto; /* Altura automática para manter proporção */
+    margin-left: 40px; /* Espaço à esquerda do ícone no botão */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/* Estilo dos links */
+a {
+    color: #0077cc; /* Cor azul para links */
+    text-decoration: none;
+    transition: color 0.3s; /* Transição de cor suave */
+}
+
+a:hover {
+    color: #005fa3; /* Cor azul mais escura ao passar o mouse */
+}
+
+/* Estilo do rodapé */
+footer {
+    background: #0077cc; /* Fundo azul */
+    color: #fff; /* Texto branco */
+    text-align: center;
+    padding: 1rem 0; /* Padding do rodapé */
+}
+
+footer a {
+    color: #fff; /* Links brancos no rodapé */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Conteúdo em coluna para telas menores */
+    }
+
+    .welcome-section .welcome-image, .tecnologia-section img, .transportes-section img, .educacao-section img, .ambientes-urbanos-section img {
+        max-width: 90%; /* Ajusta a largura da imagem para telas menores */
+        margin-top: 20px; /* Espaço acima da imagem */
+    }
+
+    header h1 {
+        font-size: 32px; /* Tamanho de fonte menor para telas menores */
+    }
+}
+
+/* Text Selection Highlight */
+::selection {
+    background: #ffd700; /* Fundo dourado para texto selecionado */
+    color: #333; /* Cor do texto para texto selecionado */
+}
+
+/* Clear Focus Styles */
+*:focus {
+    outline: 3px solid #ffd700; /* Contorno dourado para elemento focado */
+}

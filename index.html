@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade na Vida Cotidiana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Acessibilidade na Vida Cotidiana</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="transportes.html">Acessibilidade em Transportes</a></li>
+                <li><a href="tecnologia.html">Tecnologia Assistiva</a></li>
+                <li><a href="ambientes-urbanos.html">Acessibilidade em Ambientes Urbanos</a></li>
+                <li><a href="educacao.html">Educação Inclusiva</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seção de boas-vindas -->
+        <section class="welcome-section">
+            <h2 id="welcome-heading" margin-bottom="40px">Bem-vindo!</h2>
+            <div class="content-container">
+                <div class="text-and-button">
+                    <p>A acessibilidade é uma questão fundamental na construção de uma sociedade inclusiva e igualitária. Ela engloba a remoção de barreiras físicas, sensoriais e cognitivas, garantindo que todas as pessoas, independentemente de suas habilidades ou deficiências, tenham acesso igualitário a serviços, informações e espaços. A acessibilidade não se limita apenas à adaptação de ambientes físicos, como a instalação de rampas e elevadores, mas também inclui a criação de conteúdos digitais acessíveis, políticas inclusivas e práticas de comunicação adaptadas. Este conceito é vital porque promove a autonomia, a participação e a igualdade de oportunidades, permitindo que todas as pessoas contribuam ativamente para a sociedade e desfrutem de uma vida independente e digna.</p><br>
+
+                    <p>Em um contexto urbano, a acessibilidade se manifesta no design inclusivo de cidades e espaços públicos. Isso inclui transporte público acessível, calçadas seguras e navegáveis, sinalização adequada e espaços de lazer inclusivos. No ambiente de trabalho, a acessibilidade envolve a adaptação de equipamentos, ferramentas tecnológicas assistivas e ambientes de trabalho flexíveis, que podem acomodar uma variedade de necessidades dos funcionários. Na educação, a acessibilidade se traduz em práticas de ensino inclusivas, materiais didáticos adaptados e ambientes de aprendizagem que respeitam as diferenças individuais. Todos esses aspectos são essenciais para garantir que cada pessoa possa participar plenamente na vida comunitária, educacional e profissional.</p><br>
+
+                    <p>Este site busca oferecer uma compreensão abrangente da acessibilidade em diversas esferas da vida cotidiana, destacando sua importância e impacto. Aqui, exploramos temas como tecnologia assistiva, acessibilidade em transportes, ambientes urbanos inclusivos e educação inclusiva. Nosso objetivo é conscientizar sobre a importância da acessibilidade e inspirar mudanças positivas. Através da educação e do compartilhamento de informações, podemos trabalhar juntos para criar um mundo mais acessível e inclusivo para todos, independentemente das habilidades ou desafios enfrentados.</p>
+                    <button class="ouvir-button" onclick="lerTexto('A acessibilidade é uma questão fundamental na construção de uma sociedade inclusiva e igualitária. Ela engloba a remoção de barreiras físicas, sensoriais e cognitivas, garantindo que todas as pessoas, independentemente de suas habilidades ou deficiências, tenham acesso igualitário a serviços, informações e espaços. A acessibilidade não se limita apenas à adaptação de ambientes físicos, como a instalação de rampas e elevadores, mas também inclui a criação de conteúdos digitais acessíveis, políticas inclusivas e práticas de comunicação adaptadas. Este conceito é vital porque promove a autonomia, a participação e a igualdade de oportunidades, permitindo que todas as pessoas contribuam ativamente para a sociedade e desfrutem de uma vida independente e digna. Em um contexto urbano, a acessibilidade se manifesta no design inclusivo de cidades e espaços públicos. Isso inclui transporte público acessível, calçadas seguras e navegáveis, sinalização adequada e espaços de lazer inclusivos. No ambiente de trabalho, a acessibilidade envolve a adaptação de equipamentos, ferramentas tecnológicas assistivas e ambientes de trabalho flexíveis, que podem acomodar uma variedade de necessidades dos funcionários. Na educação, a acessibilidade se traduz em práticas de ensino inclusivas, materiais didáticos adaptados e ambientes de aprendizagem que respeitam as diferenças individuais. Todos esses aspectos são essenciais para garantir que cada pessoa possa participar plenamente na vida comunitária, educacional e profissional. Este site busca oferecer uma compreensão abrangente da acessibilidade em diversas esferas da vida cotidiana, destacando sua importância e impacto. Aqui, exploramos temas como tecnologia assistiva, acessibilidade em transportes, ambientes urbanos inclusivos e educação inclusiva. Nosso objetivo é conscientizar sobre a importância da acessibilidade e inspirar mudanças positivas. Através da educação e do compartilhamento de informações, podemos trabalhar juntos para criar um mundo mais acessível e inclusivo para todos, independentemente das habilidades ou desafios enfrentados.')">Ouvir <img src="alto_falante.png" alt="Ícone de alto-falante"></button>
+                </div>
+                <img src="index_pessoas.png" alt="Grupo diversificado em ambiente urbano inclusivo." class="welcome-image">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Acessibilidade na Vida Cotidiana. Feito por: Rafael Olivare Piveta</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Função para ler o texto em voz alta
+        function lerTexto(texto) {
+            // Verifica se o navegador suporta a síntese de fala
+            if ('speechSynthesis' in window) {
+                // Cria uma nova instância de síntese de fala
+                var synth = window.speechSynthesis;
+    
+                // Cria um objeto de fala com o texto a ser lido
+                var utterance = new SpeechSynthesisUtterance(texto);
+    
+                // Inicia a síntese de fala
+                synth.speak(utterance);
+            } else {
+                // Se o navegador não suporta a síntese de fala, exiba uma mensagem de erro
+                alert('Desculpe, seu navegador não suporta a síntese de fala.');
+            }
+        }
+    </script>
+</body>
+</html>
